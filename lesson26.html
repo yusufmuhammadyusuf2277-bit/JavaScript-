@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 26 - JavaScript OOP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lesson-container">
+
+  <div class="course-progress">
+    <div class="progress-text">Lesson 26 of 50</div>
+    <div class="progress-bar"><div class="progress-fill" style="width:52%;"></div></div>
+  </div>
+
+  <h2>Object-Oriented Programming</h2>
+
+  <p>
+    OOP allows you to model real-world entities using objects and classes.
+    It helps organize complex applications.
+  </p>
+
+  <div class="code-box">
+<pre>
+class User {
+  constructor(name, skill){
+    this.name = name;
+    this.skill = skill;
+  }
+  greet(){
+    console.log("Hello " + this.name);
+  }
+}
+let u = new User("Yusuf", "JS");
+u.greet();
+</pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson25.html">← Previous</a>
+    <a href="lesson27.html">Next →</a>
+  </div>
+
+</div>
+
+</body>
+</html>

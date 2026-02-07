@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 35 - API Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lesson-container">
+
+  <div class="course-progress">
+    <div class="progress-text">Lesson 35 of 50</div>
+    <div class="progress-bar"><div class="progress-fill" style="width:70%;"></div></div>
+  </div>
+
+  <h2>Working with APIs</h2>
+
+  <p>
+    APIs allow your app to get data from servers. We fetch JSON, parse it, and display it dynamically.
+  </p>
+
+  <div class="code-box">
+<pre>
+fetch('https://api.example.com/data')
+  .then(res =&gt; res.json())
+  .then(data =&gt; displayData(data));
+</pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson34.html">← Previous</a>
+    <a href="lesson36.html">Next →</a>
+  </div>
+
+</div>
+
+</body>
+</html>

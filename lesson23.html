@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 23 - JavaScript Modules</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lesson-container">
+
+  <div class="course-progress">
+    <div class="progress-text">Lesson 23 of 50</div>
+    <div class="progress-bar"><div class="progress-fill" style="width:46%;"></div></div>
+  </div>
+
+  <h2>JavaScript Modules</h2>
+
+  <p>
+    Modules allow you to split your code into reusable files.
+    You can export functions or variables and import them elsewhere.
+  </p>
+
+  <div class="code-box">
+<pre>
+// utils.js
+export function add(a,b){ return a+b; }
+
+// main.js
+import { add } from './utils.js';
+console.log(add(2,3));
+</pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson22.html">← Previous</a>
+    <a href="lesson24.html">Next →</a>
+  </div>
+
+</div>
+
+</body>
+</html>

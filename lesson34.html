@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 34 - Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lesson-container">
+
+  <div class="course-progress">
+    <div class="progress-text">Lesson 34 of 50</div>
+    <div class="progress-bar"><div class="progress-fill" style="width:68%;"></div></div>
+  </div>
+
+  <h2>Weather App</h2>
+
+  <p>
+    Create an app that fetches weather data from an API and displays it to the user.
+    This teaches asynchronous JavaScript and DOM updates.
+  </p>
+
+  <div class="code-box">
+<pre>
+fetch('https://api.weatherapi.com/v1/current.json?key=YOUR_KEY&q=London')
+  .then(res =&gt; res.json())
+  .then(data =&gt; console.log(data));
+</pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson33.html">← Previous</a>
+    <a href="lesson35.html">Next →</a>
+  </div>
+
+</div>
+
+</body>
+</html>

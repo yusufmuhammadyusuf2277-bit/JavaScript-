@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 45 - Animations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lesson-container">
+  <div class="course-progress">
+    <div class="progress-text">Lesson 45 of 50</div>
+    <div class="progress-bar"><div class="progress-fill" style="width:90%;"></div></div>
+  </div>
+
+  <h2>JavaScript Animations</h2>
+
+  <p>
+    Animate elements for better UX using JavaScript or CSS:  
+    - setInterval / requestAnimationFrame  
+    - Change position, size, opacity  
+    - CSS transitions / animations
+  </p>
+
+  <div class="code-box">
+<pre>
+let box = document.getElementById('box');
+let pos = 0;
+let id = setInterval(frame, 10);
+function frame(){
+  if(pos==350){ clearInterval(id); }
+  else { pos++; box.style.left = pos+'px'; }
+}
+</pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson44.html">← Previous</a>
+    <a href="lesson46.html">Next →</a>
+  </div>
+
+</div>
+
+</body>
+</html>

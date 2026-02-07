@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 25 - JavaScript Closures</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lesson-container">
+
+  <div class="course-progress">
+    <div class="progress-text">Lesson 25 of 50</div>
+    <div class="progress-bar"><div class="progress-fill" style="width:50%;"></div></div>
+  </div>
+
+  <h2>Closures</h2>
+
+  <p>
+    A closure is a function that remembers the variables from its outer scope.
+    It is useful for encapsulation and private variables.
+  </p>
+
+  <div class="code-box">
+<pre>
+function outer(){
+  let counter = 0;
+  return function(){
+    counter++;
+    console.log(counter);
+  }
+}
+let inner = outer();
+inner(); // 1
+inner(); // 2
+</pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson24.html">← Previous</a>
+    <a href="lesson26.html">Next →</a>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 37 - Optimization</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lesson-container">
+  <div class="course-progress">
+    <div class="progress-text">Lesson 37 of 50</div>
+    <div class="progress-bar"><div class="progress-fill" style="width:74%;"></div></div>
+  </div>
+
+  <h2>Optimizing Your Code</h2>
+
+  <p>
+    Efficient code runs faster. Avoid unnecessary loops, cache DOM references, and reduce API calls.
+  </p>
+
+  <div class="code-box">
+<pre>
+let list = document.getElementById("list");
+for(let i=0; i&lt;100; i++){
+  let li = document.createElement("li");
+  li.innerText = i;
+  list.appendChild(li);
+}
+</pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson36.html">← Previous</a>
+    <a href="lesson38.html">Next →</a>
+  </div>
+</div>
+
+</body>
+</html>

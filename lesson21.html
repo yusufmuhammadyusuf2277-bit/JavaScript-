@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 21 - JavaScript Promises</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lesson-container">
+
+  <div class="course-progress">
+    <div class="progress-text">Lesson 21 of 50</div>
+    <div class="progress-bar"><div class="progress-fill" style="width:42%;"></div></div>
+  </div>
+
+  <h2>JavaScript Promises</h2>
+
+  <p>
+    Promises represent asynchronous operations that may complete in the future.
+    They are a modern way to handle async code without deep nesting.
+  </p>
+
+  <div class="code-box">
+<pre>
+let promise = new Promise((resolve, reject) => {
+  setTimeout(() => resolve("Done!"), 1000);
+});
+
+promise.then(result => console.log(result));
+</pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson20.html">← Previous</a>
+    <a href="lesson22.html">Next →</a>
+  </div>
+
+</div>
+
+</body>
+</html>

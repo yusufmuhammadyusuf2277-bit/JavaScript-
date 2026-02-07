@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 1 - JavaScript Introduction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ===== TOP NAVIGATION ===== -->
+<header class="site-header">
+  <div class="nav-container">
+    <a href="index.html" class="logo">YusufMTech</a>
+    <nav class="nav-links">
+    
+      <a href="index.html" class="nav-box">Home</a>
+      <a href="disclaimer.html" class="nav-box">Disclaimer</a>
+      <a href="terms.html" class="nav-box">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<div class="lesson-container">
+
+  <!-- PROGRESS -->
+  <div class="course-progress">
+    <div class="progress-text">Lesson 1 of 50</div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 2%;"></div>
+    </div>
+  </div>
+
+  <h2>Introduction to JavaScript</h2>
+
+  <p>
+    JavaScript is one of the most important programming languages in the world.
+    It is used to make websites interactive, dynamic, and intelligent.
+    In this course, you will learn JavaScript step by step — from absolute beginner
+    to building real projects.
+  </p>
+
+  <h3>What JavaScript Can Do</h3>
+
+  <p>
+    JavaScript allows you to respond to user actions like clicks and typing.
+    It can change content on a page, validate forms, communicate with servers,
+    and power complete web applications.
+  </p>
+
+  <p>
+    Every modern website you visit today uses JavaScript in one way or another.
+    Learning it opens doors to frontend, backend, mobile apps, and even AI tools.
+  </p>
+
+  <h3>Your First JavaScript Example</h3>
+
+  <p>
+    Below is a simple example. When the button is clicked,
+    JavaScript will run and show a message.
+  </p>
+
+  <div class="code-box">
+<pre>
+&lt;button onclick="sayHello()"&gt;Click Me&lt;/button&gt;
+
+&lt;script&gt;
+function sayHello() {
+  alert("Welcome to JavaScript!");
+}
+&lt;/script&gt;
+</pre>
+  </div>
+
+  <button onclick="sayHello()">Run Example</button>
+
+  <h3>What You Learned in This Lesson</h3>
+
+  <p>
+    In this lesson, you learned what JavaScript is, why it is important,
+    and how JavaScript code can respond to user actions.
+    This is the foundation for everything you will build next.
+  </p>
+
+  <div class="lesson-nav">
+    <a href="index.html">← Home</a>
+    <a href="lesson2.html">Next Lesson →</a>
+  </div>
+
+</div>
+
+<script>
+function sayHello() {
+  alert("Welcome to JavaScript 🚀");
+}
+</script>
+<script>
+  // Animate the progress bar on page load
+  document.addEventListener("DOMContentLoaded", function() {
+    const progress = document.querySelector(".progress-fill");
+    const width = progress.getAttribute("style").match(/width:(\d+)%/)[1];
+    progress.style.width = "0%"; // start at 0
+    setTimeout(() => {
+      progress.style.transition = "width 1s ease-in-out";
+      progress.style.width = width + "%";
+    }, 100);
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 33 - To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lesson-container">
+
+  <div class="course-progress">
+    <div class="progress-text">Lesson 33 of 50</div>
+    <div class="progress-bar"><div class="progress-fill" style="width:66%;"></div></div>
+  </div>
+
+  <h2>Creating a To-Do App</h2>
+
+  <p>
+    A To-Do app lets users add, delete, and mark tasks. It is a great way to practice DOM manipulation and local storage.
+  </p>
+
+  <div class="code-box">
+<pre>
+let tasks = [];
+
+function addTask(task){
+  tasks.push(task);
+  renderTasks();
+}
+
+function renderTasks(){
+  document.getElementById("list").innerHTML = tasks.join("&lt;br&gt;");
+}
+</pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson32.html">← Previous</a>
+    <a href="lesson34.html">Next →</a>
+  </div>
+
+</div>
+
+</body>
+</html>

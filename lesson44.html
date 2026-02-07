@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 44 - Advanced DOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lesson-container">
+  <div class="course-progress">
+    <div class="progress-text">Lesson 44 of 50</div>
+    <div class="progress-bar"><div class="progress-fill" style="width:88%;"></div></div>
+  </div>
+
+  <h2>Advanced DOM Techniques</h2>
+
+  <p>
+    Learn dynamic DOM manipulation:  
+    - Create, clone, remove elements  
+    - Event delegation  
+    - Dynamic styling  
+    - Animations
+  </p>
+
+  <div class="code-box">
+<pre>
+document.body.addEventListener('click', function(e){
+  if(e.target.tagName==='BUTTON'){
+    alert('Button clicked!');
+  }
+});
+</pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson43.html">← Previous</a>
+    <a href="lesson45.html">Next →</a>
+  </div>
+
+</div>
+
+</body>
+</html>

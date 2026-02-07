@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lesson 27 - JavaScript Classes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="lesson-container">
+
+  <div class="course-progress">
+    <div class="progress-text">Lesson 27 of 50</div>
+    <div class="progress-bar"><div class="progress-fill" style="width:54%;"></div></div>
+  </div>
+
+  <h2>Classes in JavaScript</h2>
+
+  <p>
+    Classes provide a blueprint for creating objects.
+    They simplify object creation and inheritance.
+  </p>
+
+  <div class="code-box">
+<pre>
+class Animal {
+  constructor(type){ this.type = type; }
+  speak(){ console.log(this.type + " speaks"); }
+}
+let dog = new Animal("Dog");
+dog.speak();
+</pre>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson26.html">← Previous</a>
+    <a href="lesson28.html">Next →</a>
+  </div>
+
+</div>
+
+</body>
+</html>
